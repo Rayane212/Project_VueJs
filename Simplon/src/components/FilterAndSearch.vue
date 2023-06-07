@@ -3,7 +3,7 @@ import IconSearchVue from "./icons/IconSearch.vue";
 
 </script>
 <template>
-    <div class="container pt-3 justify-content-between bg-secondary">
+    <div class="container pt-3 mb-1 justify-content-between bg-secondary border border-top-0  border-dark rounded-bottom-4">
         <div class="row">
             <div class="col-1"></div>
             <div class="form-check col-2 checkBox bg-light rounded">

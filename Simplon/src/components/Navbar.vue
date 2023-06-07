@@ -4,13 +4,13 @@ import IconProfileVue from "./icons/IconProfile.vue";
 </script>
 
 <template>
-  <nav class="container-fluid ">
-    <div class="container pt-1 pb-4 d-flex justify-content-between align-items-center bg-light">
+  <nav class="container-fluid  ">
+    <div class="container pt-1 pb-4 d-flex justify-content-between align-items-center bg-light border border-dark rounded rounded-4">
       <a class="navbar-brand" href="#">
         <IconLogoVue class="me-2" />
       </a>
       <div class="flex-grow-1 text-center">
-        <h3 class="elegantaria-title">Mon réseau</h3>      
+        <h3 class="Playfair-Display-title">Mon réseau</h3>      
       </div>
       <a class="ms-auto">
         <IconProfileVue />
@@ -19,10 +19,6 @@ import IconProfileVue from "./icons/IconProfile.vue";
   </nav>
 </template>
 <style>
-.elegantaria-title {
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  color: #48466d;
-}
+
 
 </style>
