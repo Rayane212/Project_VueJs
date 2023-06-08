@@ -1,0 +1,42 @@
+{
+    "utilisateurs": [
+      {
+        "id": 1,
+        "pseudo": "alice91",
+        "nom": "Alice",
+        "photo": "https://example.com/photos/alice.jpg",
+        "email": "alice@example.com",
+        "motDePasse": "motDePasseAlice",
+        "amis": [2, 3]
+      },
+      {
+        "id": 2,
+        "pseudo": "bob23",
+        "nom": "Bob",
+        "photo": "https://example.com/photos/bob.jpg",
+        "email": "bob@example.com",
+        "motDePasse": "motDePasseBob",
+        "amis": [1]
+      },
+      {
+        "id": 3,
+        "pseudo": "charlie",
+        "nom": "Charlie",
+        "photo": "https://example.com/photos/charlie.jpg",
+        "email": "charlie@example.com",
+        "motDePasse": "motDePasseCharlie",
+        "amis": [1]
+      }
+    ],
+    "groupes": [
+      {
+        "nom": "Groupe 1",
+        "membres": [1, 2]
+      },
+      {
+        "nom": "Groupe 2",
+        "membres": [2, 3]
+      }
+    ]
+  }
+  

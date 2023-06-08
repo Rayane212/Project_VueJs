@@ -1,6 +1,6 @@
 <template>
 
-      <div class="col-md-4 mb-3" v-for="ami in amis" :key="ami.id">
+      <div class="" v-for="ami in amis" :key="ami.id">
         <div class="card">
           <IconProfile />
           <!-- <img :src="ami.photo" class="card-img-top" :alt="ami.nom"> -->

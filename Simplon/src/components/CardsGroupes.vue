@@ -1,5 +1,5 @@
 <template>
-    <div class="col-md-4 mb-3" v-for="groupe in groupes" :key="groupe.id">
+    <div class="" v-for="groupe in groupes" :key="groupe.id">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">{{ groupe.nom }}</h5>
