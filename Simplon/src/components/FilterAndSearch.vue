@@ -30,7 +30,7 @@ import IconSearchVue from "./icons/IconSearch.vue";
                 <button class="btn btn-outline-light" type="button" id="button-addon1">
                     <IconSearchVue />
                 </button>
-                <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
+                <input type="text" class="form-control" placeholder="Research..." aria-label="Example text with button addon"
                     aria-describedby="button-addon1">
             </div>
         </div>

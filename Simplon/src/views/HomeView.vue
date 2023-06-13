@@ -1,5 +1,5 @@
 <script setup>
-import AddFriends from "../components/AddFriends.vue";
+import AddFriends from "../components/ButtonFriends.vue";
 import FilterAndSearch from '../components/FilterAndSearch.vue';
 import Cards from '../components/Cards.vue';
 import CardsGroupes from '../components/CardsGroupes.vue';
