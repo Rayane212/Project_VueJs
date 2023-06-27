@@ -1,24 +1,19 @@
 <template>
-
-      <div class="" v-for="ami in amis" :key="ami.id">
-        <div class="card">
-          <IconProfile />
-          <!-- <img :src="ami.photo" class="card-img-top" :alt="ami.nom"> -->
-          <div class="card-body">
-            <h5 class="card-title">{{ ami.nom }}</h5>
-            <p class="card-text">Description de l'ami</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            <span class="supprimer delete-icon" @click="supprimerElement('ami', ami.id)">
-              <a>
-                <IconPersonDelete/>
-              </a>
-            </span>
-          </div>
-        </div>
+  <div class="" v-for="ami in amis" :key="ami.id">
+    <div class="card">
+      <IconProfile />
+      <!-- <img :src="ami.photo" class="card-img-top" :alt="ami.nom"> -->
+      <div class="card-body">
+        <h5 class="card-title">{{ ami.nom }}</h5>
+        <p class="card-text">{{ ami.description }}</p>
+        <span class="supprimer delete-icon" @click="supprimerElement('ami', ami.id)">
+          <a>
+            <IconPersonDelete />
+          </a>
+        </span>
       </div>
-
-      
-    
+    </div>
+  </div>
 </template>
 
 <script>
@@ -36,12 +31,13 @@ export default {
       default: () => []
     }
   },
+  emits: ['supprimer-ami-passive'],
   components: { IconProfile, IconPersonDelete },
   methods: {
     supprimerElement(id) {
-     
-        this.$emit('supprimer-ami', id);
-      
+
+      this.$emit('supprimer-ami-passive', id);
+
     }
   }
 };
@@ -54,5 +50,4 @@ export default {
   right: 0.5rem;
   cursor: pointer;
 }
-
 </style>
