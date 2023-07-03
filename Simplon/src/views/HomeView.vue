@@ -6,11 +6,11 @@ import CardsGroupes from '../components/CardsGroupes.vue';
 import { ref } from 'vue';
 
 </script>
-
 <template>
     <main>
         <AddFriends />
-        <FilterAndSearch v-model:checkedFilters="checkedFilters" @filterChange="updateContent" />
+        <FilterAndSearch v-model:checkedFilters="checkedFilters" @filterChange="updateContent" :amis="amis"
+            :groupes="groupes" />
         <div class="container pt-3 bg-secondary border border-top-0 border-dark rounded rounded-4">
             <div v-if="hasFilteredResults" class="row">
                 <div class="col-md-4 mb-3" v-for="ami in filteredAmis" :key="ami.id">
@@ -31,7 +31,7 @@ import { ref } from 'vue';
         </div>
     </main>
 </template>
-
+  
 <script>
 export default {
     components: {
@@ -122,3 +122,4 @@ export default {
     }
 };
 </script>
+  
